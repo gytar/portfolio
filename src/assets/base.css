@@ -1,0 +1,100 @@
+/* color palette from <https://github.com/vuejs/theme> */
+:root {
+  --white: #ffffff;
+  --white-soft: #f8f8f8;
+  --white-mute: #f2f2f2;
+
+  --black: #2C2B40;
+  --black-soft: #3c3b55;
+  --black-mute: #424161;
+
+
+  --divider-light-1: rgba(60, 60, 60, 0.29);
+  --divider-light-2: rgba(60, 60, 60, 0.12);
+  --divider-dark-1: rgba(84, 84, 84, 0.65);
+  --divider-dark-2: rgba(84, 84, 84, 0.48);
+
+  --text-light-1: var(--black);
+  --text-light-2: rgba(60, 60, 60, 0.66);
+  --text-dark-1: var(--white);
+  --text-dark-2: rgba(235, 235, 235, 0.64);
+
+  --light-blue-faded: rgba(43, 173, 173, 0.5);
+  --light-blue: rgb(43, 173, 173);
+
+  --pink: #BC67D1;
+
+  --rubik: 'Rubik', monospace;
+  --open-sans: 'Open Sans', sans-serif;
+}
+
+/* semantic color variables for this project */
+:root {
+  --color-background: var(--white);
+  --color-background-soft: var(--white-soft);
+  --color-background-mute: var(--white-mute);
+
+  --color-border: var(--divider-light-2);
+  --color-border-hover: var(--divider-light-1);
+
+  --color-heading: var(--text-light-1);
+  --color-text: var(--text-light-1);
+
+  --section-gap: 160px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: var(--black);
+    --color-background-soft: var(--black-soft);
+    --color-background-mute: var(--black-mute);
+
+    --color-border: var(--divider-dark-2);
+    --color-border-hover: var(--divider-dark-1);
+
+    --color-heading: var(--text-dark-1);
+    --color-text: var(--text-dark-2);
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--white);
+  background: var(--black);
+  transition: color 0.5s, background-color 0.5s;
+  line-height: 1.6;
+  font-family: var(--open-sans);
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--rubik);
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+  color: var(--white);
+}
+
+/* Fonts */
+
+@font-face {
+  font-family: 'Rubik';
+  src: url('fonts/RubikMonoOne-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('fonts/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
+}
