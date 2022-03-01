@@ -48,6 +48,7 @@ h1 {
 h2 {
   color: white;
   font-family: var(--open-sans);
+  font-size: 1em;
 }
 
 @media (min-width: 1024px) {
@@ -58,6 +59,9 @@ h2 {
 
   h1 {
     font-size: 5em;
+  }
+  h2 {
+    font-size: 1.5em;
   }
 
   i {

@@ -17,7 +17,7 @@ h1 {
   text-align: center;
   background-color: var(--light-blue-faded);
   padding: 1.5rem 2rem;
-  font-size: 3em;
+  font-size: 2.5em;
 }
 
 .line {
@@ -30,6 +30,12 @@ h1 {
 @media (min-width: 1024px) {
   .line {
     width: calc(100% + 5em);
+  }
+}
+
+@media (min-width: 1024px) {
+  .h1 {
+    font-size: 3em;
   }
 }
 </style>

@@ -1,0 +1,13 @@
+{
+  "name": "Portfolio de Guillaume Perrot",
+  "short_name": "Guillaume Perrot",
+  "start_url": "/",
+  "icons": [
+    {
+      "src": "/favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon",
+      "purpose": "any maskable"
+    }
+  ]
+}

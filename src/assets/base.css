@@ -23,6 +23,8 @@
   --light-blue: rgb(43, 173, 173);
 
   --pink: #BC67D1;
+  --pink-faded: rgba(188, 103, 209, 0.5);
+
 
   --rubik: 'Rubik', monospace;
   --open-sans: 'Open Sans', sans-serif;

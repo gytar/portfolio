@@ -4,12 +4,16 @@ import "animate.css";
 </script>
 
 <template class="welcome">
-  <WelcomeItem>
-    <template #title>Guillaume Perrot</template>
-    <template #subtitle>Concepteur développeur d'applications</template>
-  </WelcomeItem>
+  <section class="welcome-section">
+    <WelcomeItem>
+      <template #title>Guillaume Perrot</template>
+      <template #subtitle>Concepteur développeur d'applications</template>
+    </WelcomeItem>
+  </section>
 </template>
 
-<style scoped>
-@import "@/assets/base.css";
+<style>
+.welcome {
+  margin-top: 10vh;
+}
 </style>

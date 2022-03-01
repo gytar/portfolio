@@ -1,5 +1,27 @@
-<script setup>
-import HeaderItem from '@/components/HeaderItem.vue';
+<script>
+import HeaderItem from "@/components/HeaderItem.vue";
+import axios from "axios";
+export default {
+  components: {
+    HeaderItem,
+  },
+  methods: {
+    downloadFile() {
+      axios({
+        url: "/cv-guillaume-perrot.pdf",
+        method: "GET",
+        responseType: "blob",
+      }).then((res) => {
+        let file = window.URL.createObjectURL(new Blob([res.data]));
+        let docURL = document.createElement("a");
+        docURL.href = file;
+        docURL.setAttribute("download", "guillaume-perrot.pdf");
+        document.body.appendChild(docURL);
+        docURL.click();
+      });
+    },
+  },
+};
 </script>
 
 <template>
@@ -20,20 +42,14 @@ import HeaderItem from '@/components/HeaderItem.vue';
       </a>
     </div>
 
-    <a href="#">
-      <div class="download-resume">
-        <span>Mon CV</span>
-        <i class="bi bi-download"></i>
-      </div>
-    </a>
+    <div class="download-resume" @click="downloadFile()">
+      <span>Mon CV</span>
+      <i class="bi bi-download"></i>
+    </div>
   </section>
 </template>
 
 <style>
-@media (min-width: 1024px) {
-  .contact {
-  }
-}
 
 .contact {
   display: flex;
@@ -41,16 +57,18 @@ import HeaderItem from '@/components/HeaderItem.vue';
   flex-direction: column;
   justify-content: space-evenly;
   background-color: var(--white);
-  height: 80vh;
+  min-height: 80vh;
   box-shadow: rgb(29, 29, 29) 0px 0px 10px;
   border-radius: 10px;
-
 }
 .contact h1 {
-  color: var(--black);
-  font-size: 2.5rem;
+  color: var(--black) !important;
+  font-size: 1.5em;
+  background-color: var(--pink-faded) !important;
 }
-
+.contact h1 + .line {
+  background-color: var(--pink) !important;
+}
 .contact-links img {
   width: 5rem;
   margin: 1rem;
@@ -64,12 +82,22 @@ import HeaderItem from '@/components/HeaderItem.vue';
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 17rem;
+  width: 13rem;
   border: var(--pink) solid 3px;
   border-radius: 10px;
   padding: 0.7em 0.5em;
   color: var(--pink);
   font-size: 1.5em;
   font-family: var(--rubik);
+  cursor: pointer;
+}
+
+@media (min-width: 374px) {
+  .download-resume {
+    width: 17rem;
+  }
+  h1 {
+    font-size: 2.5em !important;
+  }
 }
 </style>
