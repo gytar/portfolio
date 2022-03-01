@@ -72,7 +72,7 @@ export default {
       title: "Cyberfull",
       subtitle: "2020 (POEC)",
       description:
-        "Préparation opérationnelle à l’emploi collective (POEC) sur 3 mois dans laquelle j'ai appris les bases de la cybersécurité sur les applications informatique. J'ai réalisé une application desktop en Java dans le cadre d'un fil rouge. J'ai appris beaucoup sur la base de données, la Conception Orientée Objet, docker, git, et autres",
+        "Préparation opérationnelle à l’emploi collective (POEC) sur 3 mois dans laquelle j'ai appris les bases de la cybersécurité sur les applications informatique. J'ai réalisé une application desktop en Java dans le cadre d'un fil rouge. J'ai appris beaucoup sur la base de données, la Conception Orientée Objet, docker, git.",
       imageName: "cyberfull.webp",
       link: "https://cyberfull.fr/",
       technologies: [
