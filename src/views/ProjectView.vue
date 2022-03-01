@@ -24,7 +24,7 @@ export default {
       id: 1,
       title: "Leboncoin-Like",
       description:
-        "Développement d'une application comme leboncoin en PHP Symfony",
+        "Développement d'une application comme leboncoin en PHP Symfony.",
       link: "https://github.com/gytar/symfony-exam",
       technologies: [
         { name: "symfony" },
@@ -39,7 +39,7 @@ export default {
       id: 2,
       title: "Script de sauvegarde linux",
       description:
-        "Développement d'un script pour sauvegarder les données de mon PC sur un DD externe",
+        "Développement d'un script pour sauvegarder les données de mon PC sur un disque dur externe ou autre clé USB.",
       link: "https://github.com/gytar/bakuplinux",
       technologies: [
         { name: "bash" },
@@ -52,7 +52,7 @@ export default {
       id: 3,
       title: "Youtube API Android",
       description:
-        "Développement d'une application Android pour lire les vidéos de Youtube",
+        "Développement d'une application Android pour lire les vidéos de Youtube et y enregistrer des playlists.",
       link: "https://github.com/gytar/youtube-app-android",
       technologies: [
         { name: "java" },

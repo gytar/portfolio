@@ -26,7 +26,7 @@ export default {
       title: "Wellness Prévention",
       subtitle: "2021-2022 (Stage 4 mois)",
       description:
-        "Développement d'une application web pour le centre de prévention de la santé",
+        "J'ai contribué à la conception et au développement d'une application web et mobile dans le secteur de la prévention santé. J'ai monté en compétences lors de ce stage sur Symfony et Flutter, en développant des nouvelles fonctionnalités. J'ai aussi pris des décisions technologiques sur Flutter.",
       imageName: "wellness-prevention.webp",
       link: "https://wellness-prevention.fr/",
       technologies: [
@@ -36,6 +36,7 @@ export default {
         { name: "js" },
         { name: "flutter" },
         { name: "git" },
+        { name: "docker" },
       ],
       date: "octobre 2021 - février 2022",
     };
@@ -44,7 +45,7 @@ export default {
       title: "Human Booster",
       subtitle: "2021 (Formation)",
       description:
-        "Développement d'une application web pour le centre de prévention de la santé",
+        "Formation niveau BAC+3/4 pour être concepteur développeur d'applications web et mobile sur 1 an. J'ai mis en pratique beaucoup de technologies, et approfondi mes connaissances dans le développement web et mobile. En plus des technologies ci-dessous, j'ai appris à utiliser des outils de conception sur le design et les bases de données tels que Figma, Adobe XD, UML, Merise et aussi de gestions d'entrerprise tels que Scrum.",
       imageName: "human-booster.webp",
       link: "https://humanbooster.com/",
       technologies: [
@@ -71,7 +72,7 @@ export default {
       title: "Cyberfull",
       subtitle: "2020 (POEC)",
       description:
-        "Développement d'une application web pour le centre de prévention de la santé",
+        "Préparation opérationnelle à l’emploi collective (POEC) sur 3 mois dans laquelle j'ai appris les bases de la cybersécurité sur les applications informatique. J'ai réalisé une application desktop en Java dans le cadre d'un fil rouge. J'ai appris beaucoup sur la base de données, la Conception Orientée Objet, docker, git.",
       imageName: "cyberfull.webp",
       link: "https://cyberfull.fr/",
       technologies: [

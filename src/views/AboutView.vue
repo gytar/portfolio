@@ -13,7 +13,7 @@ import HeaderItem from "@/components/HeaderItem.vue";
         <p>
           Bonjour, je suis Guillaume Perrot, concepteur et développeur
           d'application. Je suis passionné par le développement web et je suis
-          actuellement en recherche d'emploi en France
+          actuellement en recherche d'emploi en France.
         </p>
 
         <p>
@@ -22,9 +22,9 @@ import HeaderItem from "@/components/HeaderItem.vue";
         </p>
 
         <p>
-          J'aime beaucoup conceptualiser des sites avec créativité, soin et
-          rigueur. J'ai beaucoup codé avec PHP, Symfony, JavaScript, HTML&CSS,
-          et Flutter pour le mobile
+          J'aime conceptualiser des sites avec créativité, soin et
+          rigueur. Les technologies avec lesquelles je suis le plus à l'aise sont PHP, Symfony, JavaScript, HTML&CSS,
+          et Flutter pour le mobile.
         </p>
       </div>
     </div>
@@ -83,5 +83,12 @@ import HeaderItem from "@/components/HeaderItem.vue";
   margin-top: 1rem;
   padding: 30px;
   text-align: justify;
+}
+
+@media (min-width: 1024px) {
+  p {
+    font-size: 1.2em;
+  }
+  
 }
 </style>

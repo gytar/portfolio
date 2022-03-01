@@ -6,6 +6,7 @@ import "animate.css";
 
 <template>
   <NavigationItem />
+
   <router-view ref="nestedView" v-slot="{ Component }">
     <Transition name="route" mode="out-in">
       <component :is="Component"></component>
@@ -22,6 +23,8 @@ import "animate.css";
   margin: 0 auto;
   padding: 2rem;
   font-weight: normal;
+  display: flex;
+  flex-direction: column;
 }
 
 .route-enter-from {
@@ -37,5 +40,9 @@ import "animate.css";
 .route-leave-to {
   opacity: 0;
   transform: translateY(-4rem);
+}
+
+section {
+  margin-top: 10vh;
 }
 </style>

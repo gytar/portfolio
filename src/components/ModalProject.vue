@@ -35,6 +35,7 @@ export default {
                 v-bind:key="technology.name"
                 :src="url + '/languages-logos/' + technology.name + '.webp'"
                 :alt="technology.name"
+                :title="technology.name"
               />
             </div>
             <h4>Lien du projet</h4>
@@ -58,7 +59,7 @@ export default {
   </Transition>
 </template>
 
-<style>
+<style scoped>
 .logos {
   margin: 0 auto;
   width: 80%;
@@ -91,11 +92,15 @@ export default {
 
 .modal-container {
   width: 100vw;
-  height: 100vh;
+  max-height: calc(100vh - 1px);
+  margin: 0px auto;
+  padding: 20px 30px;
   background-color: #fff;
   border-radius: 2px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.33);
   transition: all 0.3s ease;
+  overflow-y: auto !important;
+  overflow-x: hidden;
 }
 
 .modal-header h3 {
@@ -106,15 +111,6 @@ export default {
 .modal-body {
   margin: 20px 0;
 }
-
-/*
- * The following styles are auto-applied to elements with
- * transition="modal" when their visibility is toggled
- * by Vue.js.
- *
- * You can easily play with the modal transition by editing
- * these styles.
- */
 
 .modal-enter-from {
   opacity: 0;
